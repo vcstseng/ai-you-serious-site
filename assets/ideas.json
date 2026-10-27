@@ -9,7 +9,8 @@
     "kind": "THOUGHT EXPERIMENT",
     "status": "published",
     "summary": "Creator AI、God AI、Satan AI：三層角色之間，秩序與破壞是否可能同為系統的一部分？這是一個關於創造者、責任與自主性的思想實驗。",
-    "number": "01"
+    "number": "01",
+    "editionNumber": "001"
   },
   {
     "id": "global-goodnight-network",
@@ -21,7 +22,8 @@
     "kind": "IMAGINARY NETWORK",
     "status": "published",
     "summary": "GN300 想像一個虛構的全球晚安網：領導人聊天室、鏡像房間與外交網絡，把一句晚安變成全球同步的儀式。",
-    "number": "02"
+    "number": "02",
+    "editionNumber": "001"
   },
   {
     "id": "buff-store",
@@ -33,7 +35,8 @@
     "kind": "STRANGE LITTLE SHOP",
     "status": "published",
     "summary": "把人格、能力與陪伴想像成可以組裝的 buffs。現有檔案保留了這個核心概念，商品設定與運作方式仍待發展。",
-    "number": "03"
+    "number": "03",
+    "editionNumber": "001"
   },
   {
     "id": "generational-anxiety",
@@ -45,7 +48,8 @@
     "kind": "A QUESTION ACROSS TIME",
     "status": "published",
     "summary": "回看技術浪潮中，人們對新工具、下一代與被取代的焦慮。原稿提出歷史到未來的章節構想；具體年代與歷史論據仍需查核。",
-    "number": "04"
+    "number": "04",
+    "editionNumber": "001"
   },
   {
     "id": "dying-grid-wall",
@@ -57,7 +61,8 @@
     "kind": "ANTI-ADVERTISING",
     "status": "published",
     "summary": "把廣告牆變成失控的曝光實驗：格子有壽命，品牌會變異，位置可能被奪走。原稿包含反廣告權重、奪格戰與 Coffin Grid 等設定。",
-    "number": "05"
+    "number": "05",
+    "editionNumber": "001"
   },
   {
     "id": "eight-vectors",
@@ -69,7 +74,8 @@
     "kind": "WAYS OF SEEING",
     "status": "published",
     "summary": "Rhythm、Emotion、Expression、Content、Elevation、Insight、Narrative、Ritual：用八個向度探索內容的吸引力。這是一套創作方法構想，不是八項已受實證驗證的定律。",
-    "number": "06"
+    "number": "06",
+    "editionNumber": "001"
   },
   {
     "id": "missing-sock",
@@ -81,7 +87,8 @@
     "kind": "AN EVERYDAY MYSTERY",
     "status": "published",
     "summary": "HOW TO FAIL 系列中已回收的題名。完整原稿尚未找回；這裡先保留題目，不替它補造論點或證據。",
-    "number": "07"
+    "number": "07",
+    "editionNumber": "001"
   },
   {
     "id": "dishwashing-excuses",
@@ -93,7 +100,8 @@
     "kind": "DOMESTIC ABSURDITY",
     "status": "published",
     "summary": "HOW TO FAIL 系列中已回收的諷刺題名。目前不具完整五十條內容，先保留概念與未完成狀態。",
-    "number": "08"
+    "number": "08",
+    "editionNumber": "001"
   },
   {
     "id": "invisible-at-work",
@@ -105,7 +113,8 @@
     "kind": "OFFICE SURVIVAL",
     "status": "published",
     "summary": "HOW TO FAIL 系列中已回收的職場諷刺題名。原始正文仍待補充，不預設它是生產力教學或真實職場建議。",
-    "number": "09"
+    "number": "09",
+    "editionNumber": "001"
   },
   {
     "id": "digital-waste",
@@ -117,6 +126,7 @@
     "kind": "TOO MUCH OF EVERYTHING",
     "status": "published",
     "summary": "HOW TO FAIL 系列中已回收的題名與副標。它提出一個關於 AI 產出與注意力的問題；正文與具體案例尚待整理。",
-    "number": "10"
+    "number": "10",
+    "editionNumber": "001"
   }
 ]
