@@ -12,3 +12,7 @@ body:has(#desktop) #desktop{height:calc(100svh - 167px)}
 html[lang=en] .archive-row small{display:none}
 
 @media(max-width:380px){.home-hero h1{font-size:64px;letter-spacing:-3px}.home-hero h1>span{font-size:45px;top:76px}.primary-action{padding:18px}.primary-action small{font-size:9px;overflow-wrap:anywhere}}
+
+.world-004{background:#e5e6d6;color:#18343c;border:1px solid #18343c;border-radius:38px 38px 8px 8px;box-shadow:4px 4px #d4d5c4}.world-004 h2{font:500 30px/1.1 "Segoe UI",Arial,sans-serif}.world-004>span,.world-004 b{color:#bd4120}
+
+@media(min-width:801px){.world-grid:has(>.world-card:nth-child(4)){grid-template-columns:repeat(2,minmax(0,1fr))}}
