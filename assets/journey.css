@@ -201,3 +201,7 @@ html[lang=en] .archive-row small{display:none}
 .compact-cover.cover-outpost .cover-title-group{margin-top:55px;max-width:90%}
 @media(max-width:650px){.cover-outpost .cover-title-group{margin-top:55px}.cover-outpost h2{font-size:68px}}
 @media(max-width:420px){.cover-outpost .cover-poster,.compact-cover.cover-outpost .cover-poster{min-height:350px}.cover-outpost .cover-title-group,.compact-cover.cover-outpost .cover-title-group{margin-top:30px;max-width:100%}.cover-outpost h2,.compact-cover.cover-outpost h2{font-size:50px}.cover-outpost .cover-image{object-position:center}}
+
+.source-return{display:block;margin:-18px 0 36px;padding:12px 0;border-bottom:1px solid #d7cebc;font-size:12px;color:#ac3729}
+
+.dialog-language{display:flex;gap:10px;margin-top:20px;padding:14px 0 0;border-left:0;border-top:1px solid #83728e55;font:11px monospace}.dialog-language a{display:inline-block}
