@@ -67,9 +67,8 @@
    document.querySelectorAll('.idea-return,.back-room').forEach(a=>a.href=u.href);
   }else if(entry?.type==='archive'&&entry.path==='/archive/'){
    const u=new URL(route('/archive/'),location.origin);u.search=entry.search||'';
-   const a=document.createElement('a');a.className='source-return';a.href=u.href;
-   a.textContent=english?'← Back to search results':'← 返回搜尋結果';
-   document.querySelector('.idea-return')?.before(a);
+   const a=document.querySelector('.idea-return');
+   if(a){a.classList.add('source-return');a.href=u.href;a.textContent=english?'← Back to search results':'← 返回搜尋結果'}
   }
  }
  const switcher=document.querySelector('header .language-switch');

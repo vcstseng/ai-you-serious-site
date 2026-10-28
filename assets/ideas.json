@@ -8,6 +8,7 @@
     "state": "回收摘要；原始對話待核對",
     "kind": "THOUGHT EXPERIMENT",
     "status": "published",
+    "intro": "把 Creator、God、Satan 想像成不同層級的 AI 角色，探索創造、秩序與破壞之間的關係。",
     "summary": "Creator AI、God AI、Satan AI：三層角色之間，秩序與破壞是否可能同為系統的一部分？這是一個關於創造者、責任與自主性的思想實驗。",
     "number": "01",
     "editionNumber": "001"
@@ -21,6 +22,7 @@
     "state": "回收摘要；原始對話待核對",
     "kind": "IMAGINARY NETWORK",
     "status": "published",
+    "intro": "GN300 是一個虛構的全球晚安網，讓不同地方的領導人在睡前交換一句晚安。",
     "summary": "GN300 想像一個虛構的全球晚安網：領導人聊天室、鏡像房間與外交網絡，把一句晚安變成全球同步的儀式。",
     "number": "02",
     "editionNumber": "001"
@@ -34,6 +36,7 @@
     "state": "簡短概念；待補充",
     "kind": "STRANGE LITTLE SHOP",
     "status": "published",
+    "intro": "把人格、能力與陪伴變成商店裡可以挑選和組裝的 buffs。",
     "summary": "把人格、能力與陪伴想像成可以組裝的 buffs。現有檔案保留了這個核心概念，商品設定與運作方式仍待發展。",
     "number": "03",
     "editionNumber": "001"
@@ -47,6 +50,7 @@
     "state": "已回收概念；歷史材料待查核",
     "kind": "A QUESTION ACROSS TIME",
     "status": "published",
+    "intro": "把不同技術浪潮放在一起，觀察人們對下一代與被取代的焦慮如何反覆出現。",
     "summary": "回看技術浪潮中，人們對新工具、下一代與被取代的焦慮。原稿提出歷史到未來的章節構想；具體年代與歷史論據仍需查核。",
     "number": "04",
     "editionNumber": "001"
@@ -60,6 +64,7 @@
     "state": "已回收概念；未實作",
     "kind": "ANTI-ADVERTISING",
     "status": "published",
+    "intro": "一面有生命週期的廣告牆：格子會衰敗、品牌會變異，位置也可能被取代。",
     "summary": "把廣告牆變成失控的曝光實驗：格子有壽命，品牌會變異，位置可能被奪走。原稿包含反廣告權重、奪格戰與 Coffin Grid 等設定。",
     "number": "05",
     "editionNumber": "001"
@@ -73,6 +78,7 @@
     "state": "已回收方法論",
     "kind": "WAYS OF SEEING",
     "status": "published",
+    "intro": "以節奏、情緒、表達、內容、提升、洞見、敘事與儀式八個角度閱讀內容。",
     "summary": "Rhythm、Emotion、Expression、Content、Elevation、Insight、Narrative、Ritual：用八個向度探索內容的吸引力。這是一套創作方法構想，不是八項已受實證驗證的定律。",
     "number": "06",
     "editionNumber": "001"
@@ -86,6 +92,7 @@
     "state": "題名已回收；正文待補",
     "kind": "AN EVERYDAY MYSTERY",
     "status": "published",
+    "intro": "一個把單隻襪子失蹤，當成平行時空線索的荒謬題名。",
     "summary": "HOW TO FAIL 系列中已回收的題名。完整原稿尚未找回；這裡先保留題目，不替它補造論點或證據。",
     "number": "07",
     "editionNumber": "001"
@@ -99,6 +106,7 @@
     "state": "題名已回收；正文待補",
     "kind": "DOMESTIC ABSURDITY",
     "status": "published",
+    "intro": "以不洗碗的藉口為題，把家務中的拖延、協商與自我辯護變成諷刺素材。",
     "summary": "HOW TO FAIL 系列中已回收的諷刺題名。目前不具完整五十條內容，先保留概念與未完成狀態。",
     "number": "08",
     "editionNumber": "001"
@@ -112,6 +120,7 @@
     "state": "題名已回收；正文待補",
     "kind": "OFFICE SURVIVAL",
     "status": "published",
+    "intro": "把「成為公司裡最透明的人」當成職場諷刺的入口。",
     "summary": "HOW TO FAIL 系列中已回收的職場諷刺題名。原始正文仍待補充，不預設它是生產力教學或真實職場建議。",
     "number": "09",
     "editionNumber": "001"
@@ -125,6 +134,7 @@
     "state": "題名已回收；正文待補",
     "kind": "TOO MUCH OF EVERYTHING",
     "status": "published",
+    "intro": "關注那些大量產生，卻沒有真正被閱讀或使用的 AI 內容。",
     "summary": "HOW TO FAIL 系列中已回收的題名與副標。它提出一個關於 AI 產出與注意力的問題；正文與具體案例尚待整理。",
     "number": "10",
     "editionNumber": "001"

@@ -8,3 +8,12 @@
 @media(max-width:600px){.topbar{flex-wrap:wrap;gap:10px}.topbar nav{width:100%;margin-left:0;justify-content:space-between;gap:10px}.language-switch{font-size:10px;padding-left:12px}.topbar nav .language-switch a{font-size:10px!important}}
 
 .archive-edition-heading{display:flex;gap:20px;align-items:center;padding:35px 0 18px;border-bottom:2px solid var(--line)}.archive-edition-heading a{font:italic 22px var(--serif)}.edition-pixel{background:#121627;color:#f4efd6;border-left-color:#c4ef69;box-shadow:5px 5px 0 #9b967f}.edition-pixel:hover{background:#202638}.edition-pixel h2{font-family:"Courier New",monospace;font-style:normal;letter-spacing:-2px}.edition-pixel .small-label,.edition-pixel .card-meta{color:#c4ef69}
+
+/* Idea reading: one introduction; source history stays secondary. */
+.reading-label{margin-left:auto;font:10px var(--sans);letter-spacing:0;color:#777064}
+.core{margin:0 0 34px}.core h2{font-size:13px;letter-spacing:1px}
+.core p{font-size:18px;line-height:2.1;max-width:38em}
+.source{margin:32px 0 34px}.source summary{font-size:11px}
+.original-notes{border-top:1px solid var(--line);padding-top:18px}.original-notes h3{font-size:11px;font-weight:500;color:var(--ink);margin:0 0 12px}.original-notes p{font-size:12px;line-height:1.9}
+.idea-pagination{margin-top:30px}.edition-index h2{font:500 19px/1.5 var(--sans);letter-spacing:.5px}
+@media(max-width:700px){.core p{font-size:16px;line-height:2}.reading-label{font-size:9px}.original-notes p{font-size:12px}}
