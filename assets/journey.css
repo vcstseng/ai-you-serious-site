@@ -17,9 +17,171 @@ html[lang=en] .archive-row small{display:none}
 
 @media(min-width:801px){.world-grid:has(>.world-card:nth-child(4)){grid-template-columns:repeat(2,minmax(0,1fr))}}
 
-/* Illustrated covers shared by Home and All Editions. */
-.edition-cover{display:block;border:1px solid #c1b8a5;margin-top:26px;text-decoration:none!important;transition:transform .16s,box-shadow .16s;overflow:hidden}.edition-cover:hover{transform:translateY(-3px);box-shadow:5px 6px #38352c20}.cover-poster{position:relative;min-height:285px;overflow:hidden;padding:31px 38px;background:#e8dfca;isolation:isolate}.cover-issue{position:relative;z-index:2;display:flex;justify-content:space-between;font:10px "Courier New",monospace;letter-spacing:2px}.cover-issue small{font:9px "Courier New",monospace;letter-spacing:1px}.edition-cover h2{font:italic 600 53px/1.05 Georgia,serif;letter-spacing:-2px;position:relative;z-index:2;width:54%;margin:38px 0 25px;overflow-wrap:normal}.cover-tag{position:relative;z-index:2;font:8px "Courier New",monospace;letter-spacing:1.5px}.cover-art{position:absolute;right:0;bottom:0;width:50%;height:100%;z-index:1;pointer-events:none}.cover-art svg{width:100%;height:100%;display:block;object-fit:contain}.cover-caption{padding:20px 28px;display:flex;gap:25px;justify-content:space-between;align-items:center;background:#f7f2e6}.cover-caption p{font:12px/1.8 "Segoe UI",Arial,sans-serif;margin:0;max-width:75%}.cover-caption>span{font:10px "Segoe UI",Arial,sans-serif;white-space:nowrap}.cover-collage{border-color:#bcae8d;box-shadow:3px 4px #d2c5a7}.cover-collage .cover-poster{background:repeating-linear-gradient(0deg,#e8dfca 0 23px,#d6cdbb77 24px,#e8dfca 25px)}.cover-collage h2{color:#333c2f;transform:rotate(-2deg)}.cover-collage .cover-tag{color:#a63b2b}.cover-arcade{border:4px solid #586a55;box-shadow:4px 4px #b2b59c}.cover-arcade .cover-poster{background:radial-gradient(ellipse at 75% 100%,#35364d,#121627 70%);color:#d3ed90}.cover-arcade h2{font:700 48px/1.05 "Courier New",monospace;font-style:normal;letter-spacing:-3px;text-shadow:3px 3px #61774a}.cover-arcade .cover-caption{background:#1c2434;color:#e3e5c8;border-top:2px solid #586a55}.cover-desktop{border:2px solid #84729b;box-shadow:4px 5px #bcb0ca}.cover-desktop .cover-poster{background:linear-gradient(140deg,#aaa0d8,#dcb5d8 65%,#8bcfd1);color:#42305e}.cover-desktop h2{font:500 51px/1.03 "Segoe UI",Arial,sans-serif;letter-spacing:-3px}.cover-desktop .cover-caption{background:#d6d0dd;border-top:2px solid #f7effb}.cover-desktop .cover-issue{background:#5a447c;color:#fff;margin:-22px -29px 0;padding:6px 10px;font-size:9px}.cover-orbit{border:2px solid #193b3e;border-radius:22px;box-shadow:5px 5px #c6cbbb}.cover-orbit .cover-poster{background-color:#dce1d3;background-image:radial-gradient(#6c837455 .8px,transparent .8px);background-size:14px 14px;color:#193b3e}.cover-orbit h2{font:600 53px/.99 "Segoe UI",Arial,sans-serif;color:#d64d28;letter-spacing:-3px}.cover-orbit .cover-caption{background:#193b3e;color:#ece7da;border-top:1px solid #193b3e}.cover-orbit .cover-issue{color:#193b3e}.world-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px}.world-grid .edition-cover{margin-top:0;min-width:0}.compact-cover .cover-poster{min-height:240px;padding:24px}.compact-cover h2{font-size:36px;width:61%;margin:37px 0 22px;letter-spacing:-1.8px}.compact-cover .cover-art{width:56%;right:-10%;opacity:.85}.compact-cover .cover-issue{font-size:8px;letter-spacing:1px}.compact-cover .cover-issue small{font-size:8px}.compact-cover .cover-tag{font-size:6px;letter-spacing:.7px}.compact-cover .cover-caption{padding:18px 21px;align-items:flex-start;flex-direction:column;gap:12px}.compact-cover .cover-caption p{font-size:11px;max-width:none}.compact-cover.cover-arcade h2{font-size:32px;letter-spacing:-2px}.compact-cover.cover-desktop .cover-issue{margin:-17px -17px 0;padding:6px}.compact-cover.cover-orbit h2{font-size:37px}.compact-cover.cover-collage .cover-art{right:-11%;width:55%}@media(max-width:800px){.world-grid{grid-template-columns:1fr!important}.cover-poster{min-height:235px;padding:24px}.edition-cover h2{font-size:40px;letter-spacing:-2px;width:65%;margin:34px 0 22px}.cover-art{width:60%;right:-10%;opacity:.75}.cover-tag{font-size:7px;letter-spacing:.5px}.cover-caption{padding:18px 21px;align-items:flex-start;flex-direction:column;gap:12px}.cover-caption p{max-width:100%;font-size:12px}.cover-arcade h2{font-size:36px;letter-spacing:-2px}.cover-desktop h2{font-size:40px}.cover-desktop .cover-issue{margin:-17px -17px 0;padding:6px}.cover-orbit h2{font-size:40px}.cover-issue{font-size:9px;letter-spacing:1px}.cover-issue small{font-size:8px}.compact-cover .cover-art{width:60%;right:-12%}.compact-cover h2{font-size:36px}}@media(max-width:380px){.cover-poster{min-height:220px;padding:22px}.edition-cover h2,.compact-cover h2{font-size:32px;letter-spacing:-1px;width:70%}.cover-arcade h2,.compact-cover.cover-arcade h2{font-size:29px}.cover-orbit h2,.compact-cover.cover-orbit h2{font-size:34px}.cover-tag,.compact-cover .cover-tag{font-size:6px;letter-spacing:0}.cover-art,.compact-cover .cover-art{right:-17%;width:65%;opacity:.55}.cover-caption{padding:17px}.cover-desktop .cover-issue{margin:-15px -15px 0}.compact-cover.cover-desktop .cover-issue{margin:-15px -15px 0}}@media(prefers-reduced-motion:reduce){.edition-cover{transition:none}}
-
-.cover-theatre{border:1px solid #a38c76;box-shadow:5px 6px #c2ae9560}.cover-theatre .cover-poster{background:#e9ddc6;background-image:radial-gradient(#9b806633 .6px,transparent .6px);background-size:5px 5px;color:#6c3d4d}.cover-theatre h2{font:italic 500 55px/1 Georgia,serif;letter-spacing:-2px}.cover-theatre .cover-caption{background:#874955;color:#f3e5ce}.cover-theatre .cover-issue{color:#6c3d4d}.compact-cover.cover-theatre h2{font-size:39px}@media(max-width:800px){.cover-theatre h2{font-size:40px}}@media(max-width:380px){.cover-theatre h2,.compact-cover.cover-theatre h2{font-size:34px}}
-
-.cover-manga{border:3px solid #171426;box-shadow:6px 6px #171426}.cover-manga .cover-poster{background:#171426;color:#d9f45c;background-image:radial-gradient(#e9dfea33 1px,transparent 1px);background-size:7px 7px}.cover-manga h2{font:900 66px/.86 Impact,"Arial Black",sans-serif;letter-spacing:-2px;transform:skew(-8deg);text-shadow:3px 3px #b23e78;width:47%;margin-top:38px}.cover-manga .cover-art{width:55%;right:0}.cover-manga .cover-caption{background:#d9f45c;color:#171426;border-top:3px solid #171426}.cover-manga .cover-issue{color:#f4eeda}.compact-cover.cover-manga h2{font-size:41px;width:58%;margin-top:38px}.compact-cover.cover-manga .cover-art{width:54%;right:-3%;opacity:.9}@media(max-width:800px){.cover-manga h2{font-size:46px;width:65%}.cover-manga .cover-art{right:-11%;width:60%;opacity:.65}}@media(max-width:380px){.cover-manga h2,.compact-cover.cover-manga h2{font-size:36px;width:70%}.cover-manga .cover-art{opacity:.5}}
+/* Six art-directed covers. Shared navigation; independent editorial layouts. */
+.edition-cover{display:block;min-width:0;margin-top:32px;color:#f8f2e5;text-decoration:none!important;border:1px solid #28261f;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.edition-cover:hover{transform:translateY(-4px);box-shadow:0 12px 28px #27241c24}
+.edition-cover:focus-visible{outline:4px solid #ac3729;outline-offset:6px}
+.cover-poster{position:relative;isolation:isolate;overflow:hidden;min-height:470px;padding:28px 34px;display:flex;flex-direction:column;background:#25243a}
+.cover-image,.cover-shade{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
+.cover-image{object-fit:cover;object-position:center 56%;transition:transform .65s cubic-bezier(.2,.65,.3,1)}
+.edition-cover:hover .cover-image{transform:scale(1.025)}
+.cover-shade{z-index:-1;background:linear-gradient(90deg,#131421d9,transparent 70%)}
+.cover-issue{display:flex;justify-content:space-between;gap:12px;font:11px/1.4 "Courier New",monospace;letter-spacing:2px;position:relative;z-index:1}
+.cover-issue small{font:10px/1.4 "Courier New",monospace;letter-spacing:1px}
+.cover-title-group{position:relative;max-width:70%;margin-top:auto;padding:32px 0 8px}
+.cover-detail{display:block;font:9px/1.5 "Courier New",monospace;letter-spacing:1.8px;margin-bottom:17px}
+.edition-cover h2{font:700 clamp(42px,5.4vw,74px)/.96 Georgia,serif;letter-spacing:-3px;margin:0 0 23px;overflow-wrap:normal}
+.edition-cover h2 span{display:block}
+.cover-tag{display:block;font:9px/1.6 "Courier New",monospace;letter-spacing:1.3px;max-width:100%}
+.cover-index{position:absolute;right:30px;bottom:20px;font:italic 700 68px/.8 Georgia,serif;opacity:.7;letter-spacing:-5px}
+.cover-caption{padding:22px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:#f7f2e6;color:#383329}
+.cover-caption p{font:13px/1.8 "Segoe UI","Microsoft JhengHei",sans-serif;margin:0;max-width:78%}
+.cover-caption>span{font:11px/1.5 "Segoe UI",sans-serif;white-space:nowrap}
+.cover-fallback{position:absolute;right:10%;top:10%;font:300px Georgia;color:#d5bb76;opacity:.5;z-index:-1}
+/* Found notebook: paper label, small marginalia, imperfect stamp. */
+.cover-collage{border-color:#ab9879;box-shadow:3px 4px #c4b290}
+.cover-collage .cover-poster{color:#29392e;background:#e8dfc9}
+.cover-collage .cover-shade{background:linear-gradient(100deg,#eee6d599,transparent 75%)}
+.cover-collage .cover-image{object-position:left top}
+.cover-collage .cover-title-group{margin-top:38px;margin-bottom:auto;max-width:62%;transform:rotate(-3deg)}
+.cover-collage h2{font-style:italic;font-weight:500;line-height:.94;letter-spacing:-3px}
+.cover-collage h2 span:last-child{font-size:1.35em;color:#a43827}
+.cover-collage .cover-detail{color:#a43827;border-bottom:1px solid #a4382766;padding-bottom:8px;display:inline-block}
+.cover-collage .cover-tag{max-width:210px;background:#efe5cfe8;padding:6px 8px;transform:rotate(2deg)}
+.cover-collage .cover-index{color:#a43827;border:2px solid;padding:9px;font:700 28px "Courier New",monospace;transform:rotate(10deg);opacity:.9;letter-spacing:0}
+.cover-collage .cover-caption{background:#eae0c9}
+/* Playable-looking level: pixel-lit scene and an arcade start label. */
+.cover-arcade{border:4px solid #171a34;box-shadow:5px 5px #acbd63}
+.cover-arcade .cover-poster{color:#defb86}
+.cover-arcade .cover-poster{background:#101039}
+.cover-arcade .cover-image{left:auto;width:75%;object-fit:contain;object-position:right bottom;image-rendering:pixelated;mask-image:linear-gradient(90deg,transparent,#000 40%)}
+.cover-arcade .cover-shade{background:none}
+.cover-arcade .cover-title-group{max-width:80%;margin-top:52px;margin-bottom:auto;padding-bottom:5px}
+.cover-arcade .cover-detail{display:inline-block;background:#d7ee8a;color:#172033;box-shadow:4px 4px #634f88;padding:7px 10px;font-weight:bold}
+.cover-arcade h2{font:900 clamp(38px,5.4vw,70px)/1 "Courier New",monospace;letter-spacing:-4px;text-shadow:4px 4px #211836,-2px -2px #211836}
+.cover-arcade h2 span:last-child{color:#f3a9c2}
+.cover-arcade .cover-index{font:700 30px "Courier New",monospace;letter-spacing:-2px;color:#dcf38e}
+.cover-arcade .cover-caption{background:#171c32;color:#e8edd4;border-top:2px solid #c8df8a}
+/* A floating OS window within a surreal desktop landscape. */
+.cover-desktop{border:3px solid #cec5dc;box-shadow:5px 5px #87799d}
+.cover-desktop .cover-poster{padding:0;color:#3a285e}
+.cover-desktop .cover-issue{padding:8px 15px;background:#4b3a76;color:#f4efff;border-bottom:2px solid #f8ecff}
+.cover-desktop .cover-shade{background:linear-gradient(90deg,#6a4a8e44,transparent 55%)}
+.cover-desktop .cover-title-group{margin:95px auto 36px 30px;max-width:56%;padding:0 20px 21px;background:#e6dceceF;border:3px solid;border-color:#fff7ff #80718e #80718e #fff7ff;box-shadow:12px 15px #3a255d44;transform:rotate(-4deg)}
+.cover-desktop .cover-detail{background:#4b3a76;color:#fff5ff;padding:6px 9px;margin:0 -17px 20px;letter-spacing:0;font-size:9px}
+.cover-desktop h2{font:500 clamp(36px,4.4vw,60px)/1.03 "Segoe UI",sans-serif;letter-spacing:-3px;margin-bottom:20px}
+.cover-desktop .cover-tag{font-size:8px;letter-spacing:.5px}
+.cover-desktop .cover-index{color:#ffdbd4;text-shadow:3px 3px #735d92}
+.cover-desktop .cover-caption{background:#d9d0e4;border-top:2px solid #fff2ff}
+/* A destination poster: monumental scale and tightly set travel type. */
+.cover-orbit{border:2px solid #153a40}
+.cover-orbit .cover-poster{background:#163b40;color:#f9e9bd;min-height:500px}
+.cover-orbit .cover-shade{background:linear-gradient(90deg,#153b40d9,transparent 70%)}
+.cover-orbit .cover-title-group{margin-top:45px;margin-bottom:auto;max-width:80%}
+.cover-orbit h2{font:900 clamp(38px,5.8vw,80px)/.92 Impact,"Arial Narrow",sans-serif;letter-spacing:-1px;text-transform:uppercase}
+.cover-orbit h2 span:first-child{font-size:.63em;letter-spacing:1px;margin-bottom:8px}
+.cover-orbit h2 span:last-child{color:#ffba73}
+.cover-orbit .cover-tag{border-top:2px solid #f9e9bd;padding-top:12px;display:inline-block}
+.cover-orbit .cover-index{font:900 85px/.85 Impact,sans-serif;color:#e9723e;opacity:1;letter-spacing:-3px}
+.cover-orbit .cover-caption{background:#163b40;color:#f4e8cc}
+/* Printed theatre programme, framing the illuminated paper stage. */
+.cover-theatre{border:1px solid #7d4352;box-shadow:5px 6px #c6ad97}
+.cover-theatre .cover-poster{background:#6b3046;color:#ffecc9}
+.cover-theatre .cover-shade{background:linear-gradient(90deg,#592235c9,transparent 78%)}
+.cover-theatre .cover-issue{border-bottom:1px solid #efd4a666;padding-bottom:12px}
+.cover-theatre .cover-title-group{margin-top:55px;margin-bottom:auto;max-width:65%;text-align:center}
+.cover-theatre .cover-detail{font-size:8px;letter-spacing:2px}
+.cover-theatre h2{font:italic 500 clamp(45px,5.8vw,80px)/.96 Georgia,serif;letter-spacing:-3px;text-shadow:0 3px 18px #4d1b2e}
+.cover-theatre h2 span:first-child{font-size:.7em;margin-bottom:10px}
+.cover-theatre .cover-tag{font-size:8px;letter-spacing:1px}
+.cover-theatre .cover-index{font:italic 30px Georgia,serif;letter-spacing:0;border:1px solid #e6c795;padding:6px 12px}
+.cover-theatre .cover-caption{background:#7d4352;color:#f8e5c8}
+/* An original duo, drawn specifically for this cover. */
+.cover-manga{border:3px solid #171426;box-shadow:6px 6px #171426}
+.cover-manga .cover-poster{background:#171426;color:#ddf568}
+.cover-manga .cover-shade{background:linear-gradient(90deg,#171426c9,transparent 68%)}
+.cover-manga .cover-issue{color:#f7eddc}
+.cover-manga .cover-title-group{margin-top:68px;margin-bottom:auto;max-width:72%;transform:skew(-8deg)}
+.cover-manga h2{font:900 clamp(50px,7vw,94px)/.86 Impact,"Arial Black",sans-serif;letter-spacing:-2px;text-shadow:4px 4px #a43878,7px 7px #171426}
+.cover-manga h2 span:first-child{font-size:.7em;margin-bottom:8px}
+.cover-manga .cover-detail{letter-spacing:1px;color:#fff3e3}
+.cover-manga .cover-tag{font-size:8px;letter-spacing:.7px;max-width:230px;margin-top:28px}
+.cover-manga .cover-index{background:#ddf568;color:#171426;font:900 45px/.9 Impact,sans-serif;padding:8px;transform:rotate(-7deg);opacity:1;letter-spacing:-1px}
+.cover-manga .cover-caption{background:#ddf568;color:#171426;border-top:3px solid #171426}
+/* Compact cards get their own type scale without shrinking the art away. */
+.world-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:30px}
+.world-grid .edition-cover{margin-top:0;min-width:0}
+.compact-cover .cover-poster{min-height:355px;padding:20px}
+.compact-cover h2{font-size:43px;letter-spacing:-2px}
+.compact-cover .cover-issue{font-size:9px;letter-spacing:1px}
+.compact-cover .cover-issue small{font-size:9px}
+.compact-cover .cover-detail{font-size:7px;letter-spacing:1px}
+.compact-cover .cover-tag{font-size:7px;letter-spacing:.5px}
+.compact-cover .cover-caption{padding:18px 20px;align-items:flex-start;flex-direction:column;gap:12px}
+.compact-cover .cover-caption p{max-width:none;font-size:12px}
+.compact-cover .cover-index{right:18px;bottom:16px}
+.compact-cover.cover-collage .cover-title-group{max-width:75%;margin-top:30px}
+.compact-cover.cover-arcade h2{font-size:42px;letter-spacing:-3px}
+.compact-cover.cover-desktop .cover-poster{padding:0}
+.compact-cover.cover-desktop .cover-title-group{max-width:70%;margin:70px auto 25px 22px;padding:0 15px 17px}
+.compact-cover.cover-desktop .cover-detail{margin:0 -12px 15px;padding:6px;font-size:7px}
+.compact-cover.cover-desktop h2{font-size:38px}
+.compact-cover.cover-orbit h2{font-size:55px;letter-spacing:-1px}
+.compact-cover.cover-orbit .cover-title-group{margin-top:35px;max-width:95%}
+.compact-cover.cover-orbit .cover-index{font-size:65px}
+.compact-cover.cover-theatre h2{font-size:52px}
+.compact-cover.cover-theatre .cover-title-group{max-width:75%;margin-top:35px}
+.compact-cover.cover-manga h2{font-size:62px;letter-spacing:-1.5px}
+.compact-cover.cover-manga .cover-title-group{max-width:85%;margin-top:45px}
+.compact-cover.cover-manga .cover-tag{margin-top:20px}
+@media(max-width:800px){
+ .world-grid{grid-template-columns:1fr!important}
+ .cover-poster{min-height:400px;padding:22px}
+ .edition-cover h2{font-size:54px;letter-spacing:-2px}
+ .cover-issue{font-size:9px;letter-spacing:1px}.cover-issue small{font-size:9px}
+ .cover-detail{font-size:8px;letter-spacing:1px}.cover-tag{font-size:8px;letter-spacing:.5px}
+ .cover-caption{padding:20px;align-items:flex-start;flex-direction:column;gap:12px}.cover-caption p{max-width:100%;font-size:12px}
+ .cover-title-group{max-width:80%}
+ .cover-collage .cover-title-group{max-width:78%;margin-top:40px}
+ .cover-desktop .cover-title-group{max-width:70%;margin-left:22px;margin-top:85px}.cover-desktop h2{font-size:45px}
+ .cover-orbit .cover-poster{min-height:430px}.cover-orbit h2{font-size:64px}.cover-orbit .cover-title-group{max-width:95%}
+ .cover-theatre h2{font-size:64px}.cover-theatre .cover-title-group{max-width:80%;margin-top:45px}
+ .cover-manga h2{font-size:72px}.cover-manga .cover-title-group{max-width:90%;margin-top:60px}
+ .cover-index{right:20px;bottom:18px}
+}
+@media(max-width:420px){
+ .cover-poster,.compact-cover .cover-poster{min-height:350px;padding:17px}
+ .edition-cover h2,.compact-cover h2{font-size:40px;letter-spacing:-2px}
+ .cover-title-group{max-width:100%}.cover-tag{font-size:7px;letter-spacing:.3px}.cover-detail{font-size:7px;letter-spacing:.7px}
+ .cover-issue,.compact-cover .cover-issue{font-size:8px;letter-spacing:.7px}.cover-issue small,.compact-cover .cover-issue small{font-size:8px}
+ .cover-collage .cover-title-group,.compact-cover.cover-collage .cover-title-group{max-width:85%;margin-top:36px}
+ .cover-collage h2 span:last-child{font-size:1.3em}
+ .cover-arcade h2,.compact-cover.cover-arcade h2{font-size:38px;letter-spacing:-3px}
+ .cover-desktop .cover-poster{padding:0}.cover-desktop .cover-title-group,.compact-cover.cover-desktop .cover-title-group{max-width:78%;margin:82px auto 25px 16px;padding:0 13px 16px}
+ .cover-desktop .cover-detail,.compact-cover.cover-desktop .cover-detail{margin:0 -10px 15px;padding:6px;font-size:7px}.cover-desktop h2,.compact-cover.cover-desktop h2{font-size:36px;letter-spacing:-2px}
+ .cover-orbit .cover-poster{min-height:380px}.cover-orbit h2,.compact-cover.cover-orbit h2{font-size:48px;letter-spacing:0}.cover-orbit .cover-title-group{margin-top:35px;max-width:100%}.cover-orbit .cover-index{font-size:64px}
+ .cover-theatre h2,.compact-cover.cover-theatre h2{font-size:49px}.cover-theatre .cover-title-group,.compact-cover.cover-theatre .cover-title-group{max-width:85%;margin-top:40px}
+ .cover-manga h2,.compact-cover.cover-manga h2{font-size:54px;letter-spacing:-1.5px}.cover-manga .cover-title-group,.compact-cover.cover-manga .cover-title-group{max-width:100%;margin-top:50px}.cover-manga .cover-tag{max-width:165px}
+ .cover-index{right:16px;bottom:16px}.cover-manga .cover-index{font-size:34px}
+ .cover-caption,.compact-cover .cover-caption{padding:17px}.cover-caption p{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){.edition-cover,.cover-image{transition:none}.edition-cover:hover .cover-image{transform:none}}
+/* Narrow covers separate the headline and artwork instead of cropping faces. */
+@media(max-width:420px){
+ .cover-image{inset:auto 0 0;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;object-position:center}
+ .cover-shade{background:none!important}
+ .cover-title-group,.compact-cover .cover-title-group{padding:0;margin-top:30px;margin-bottom:auto}
+ .cover-collage .cover-poster{background:#e9dfc9}
+ .cover-collage .cover-title-group,.compact-cover.cover-collage .cover-title-group{margin-top:28px;max-width:100%}
+ .cover-collage h2,.compact-cover.cover-collage h2{font-size:36px}
+ .cover-arcade .cover-image{width:130%;left:auto;right:0;mask-image:linear-gradient(90deg,transparent,#000 35%)}
+ .cover-arcade .cover-title-group{margin-top:30px}
+ .cover-desktop .cover-poster{background:#4b3a76}
+ .cover-desktop .cover-title-group,.compact-cover.cover-desktop .cover-title-group{max-width:85%;margin:28px auto auto 16px;padding:12px 14px;transform:rotate(-3deg)}
+ .cover-desktop h2,.compact-cover.cover-desktop h2{font-size:32px;margin:0}
+ .cover-orbit .cover-title-group,.compact-cover.cover-orbit .cover-title-group{margin-top:35px}
+ .cover-theatre .cover-title-group,.compact-cover.cover-theatre .cover-title-group{margin-top:28px;max-width:100%}
+ .cover-theatre h2,.compact-cover.cover-theatre h2{font-size:45px}
+ .cover-manga .cover-title-group,.compact-cover.cover-manga .cover-title-group{margin-top:30px}
+ .cover-manga h2,.compact-cover.cover-manga h2{font-size:48px}
+}
