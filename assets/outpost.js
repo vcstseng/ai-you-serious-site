@@ -32,8 +32,8 @@
   art.innerHTML=`<svg viewBox="0 0 88 82" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel">${paths[i]}</svg>`;
   r.node.prepend(art);
   const label=document.createElement('span');label.className='mission-category';label.textContent=r.category;r.node.append(label);
-  
-  
+
+
  });
  function close(){reader.hidden=true;links.forEach(n=>{n.setAttribute('aria-current','false');n.dataset.selected='false'});window.AIYS.clearSelection();if(selected>=0)links[selected].focus()}
  document.querySelector('#close-file').addEventListener('click',close);
