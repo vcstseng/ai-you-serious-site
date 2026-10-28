@@ -49,3 +49,5 @@
 @media(prefers-reduced-motion:reduce){.cargo-list>a,.mission-art svg{transition:none}.cargo-list>a:hover{transform:none}.cargo-list>a:hover .mission-art svg{transform:none}}
 
 .cargo-list>a[data-enhanced]:after{content:"＋"}.cargo-list>a[data-enhanced][aria-current=true]:after{content:"−"}
+
+.cargo-list>a[data-enhanced]::after,.cargo-list>a[data-enhanced][aria-current="true"]::after{content:"↗"}

@@ -17,7 +17,7 @@
  let selected=-1;
  function select(index,write=false,focus=true){
   selected=index;const r=records[index];reader.hidden=false;
-  links.forEach((n,i)=>{n.setAttribute('aria-current',String(i===index));n.setAttribute('aria-expanded',String(i===index))});
+  links.forEach((n,i)=>{n.setAttribute('aria-current',String(i===index));n.dataset.selected=String(i===index)});
   title.textContent=r.title;
   document.querySelector('#file-count').textContent=String(index+1).padStart(2,'0')+' / 10';
   for(const [id,value] of [['file-category',r.category],['file-hook',r.hook],['file-copy',r.copy],['file-source',r.source]])document.getElementById(id).textContent=value;
@@ -26,16 +26,16 @@
   if(focus){reader.scrollIntoView({block:'start',behavior:'auto'});title.focus({preventScroll:true})}
  }
  records.forEach((r,i)=>{
-  r.node.setAttribute('data-enhanced','');r.node.setAttribute('role','button');r.node.setAttribute('aria-controls','mission-file');r.node.setAttribute('aria-expanded','false');
+  r.node.setAttribute('data-enhanced','');
   r.node.setAttribute('aria-label',String(i+1).padStart(2,'0')+' / '+r.title);
   const art=document.createElement('span');art.className='mission-art';art.setAttribute('aria-hidden','true');
   art.innerHTML=`<svg viewBox="0 0 88 82" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel">${paths[i]}</svg>`;
   r.node.prepend(art);
   const label=document.createElement('span');label.className='mission-category';label.textContent=r.category;r.node.append(label);
-  r.node.addEventListener('click',e=>{if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;e.preventDefault();select(i,true)});
-  r.node.addEventListener('keydown',e=>{if(e.key===' '){e.preventDefault();select(i,true)}});
+  
+  
  });
- function close(){reader.hidden=true;links.forEach(n=>{n.setAttribute('aria-current','false');n.setAttribute('aria-expanded','false')});window.AIYS.clearSelection();if(selected>=0)links[selected].focus()}
+ function close(){reader.hidden=true;links.forEach(n=>{n.setAttribute('aria-current','false');n.dataset.selected='false'});window.AIYS.clearSelection();if(selected>=0)links[selected].focus()}
  document.querySelector('#close-file').addEventListener('click',close);
  reader.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();close()}});
  document.querySelector('#next-file').addEventListener('click',()=>select((selected+1)%10,true));

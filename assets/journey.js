@@ -45,7 +45,6 @@
   const u=new URL(a.href,location.href);if(u.origin!==location.origin)return;
   const target=clean(u.pathname);if(!target?.startsWith('/archive/ideas/'))return;
   const modified=event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||event.button>0;
-  if((a.getAttribute('role')==='button'||a.hasAttribute('data-open'))&&!modified)return;
   const path=clean(location.pathname);
   if(idea)return; // Moving between L2 pages retains the original entry context.
   const number=edition||a.dataset.edition;
