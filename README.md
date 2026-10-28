@@ -2,7 +2,7 @@
 
 [Visit the website](https://vcstseng.github.io/ai-you-serious-site/) · [All editions](https://vcstseng.github.io/ai-you-serious-site/editions/) · [Idea archive](https://vcstseng.github.io/ai-you-serious-site/archive/)
 
-An evolving collection of curious ideas: seven editions, seventy ideas, in Chinese and English. Each edition has its own visual world; the homepage opens the latest edition.
+An evolving collection of curious ideas: eight editions, eighty ideas, in Chinese and English. Each edition has its own visual world; the homepage opens the latest edition.
 
 - L1: explore an edition. Idea cards link directly to L2.
 - L2: read an idea through a consistent archive page.
