@@ -185,3 +185,19 @@ html[lang=en] .archive-row small{display:none}
  .cover-manga .cover-title-group,.compact-cover.cover-manga .cover-title-group{margin-top:30px}
  .cover-manga h2,.compact-cover.cover-manga h2{font-size:48px}
 }
+
+/* Edition 007: a frontier spaceport, independent from the Space Age poster. */
+.cover-outpost{border:1px solid #66583b;box-shadow:4px 5px #181c15}
+.cover-outpost .cover-poster{background:#10120f;color:#edc966;min-height:470px}
+.cover-outpost .cover-image{object-position:right center}
+.cover-outpost .cover-shade{background:linear-gradient(90deg,#080b09b3,transparent 75%)}
+.cover-outpost .cover-title-group{margin-top:72px;margin-bottom:auto;max-width:80%}
+.cover-outpost h2{font:900 clamp(56px,7.2vw,100px)/.87 Impact,"Arial Narrow",sans-serif;letter-spacing:-2px}
+.cover-outpost h2 span:last-child{color:transparent;-webkit-text-stroke:1.5px #edc966}
+.cover-outpost .cover-caption{background:#1a1e18;color:#dbd8c4;border-top:1px solid #66583b}
+.cover-outpost .cover-issue{color:#e5d4a8}
+.compact-cover.cover-outpost .cover-poster{min-height:355px}
+.compact-cover.cover-outpost h2{font-size:60px}
+.compact-cover.cover-outpost .cover-title-group{margin-top:55px;max-width:90%}
+@media(max-width:650px){.cover-outpost .cover-title-group{margin-top:55px}.cover-outpost h2{font-size:68px}}
+@media(max-width:420px){.cover-outpost .cover-poster,.compact-cover.cover-outpost .cover-poster{min-height:350px}.cover-outpost .cover-title-group,.compact-cover.cover-outpost .cover-title-group{margin-top:30px;max-width:100%}.cover-outpost h2,.compact-cover.cover-outpost h2{font-size:50px}.cover-outpost .cover-image{object-position:center}}
