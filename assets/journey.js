@@ -77,6 +77,13 @@
    if(a){a.classList.add('source-return');a.href=u.href;a.textContent=english?'← Back to search results':'← 返回搜尋結果'}
   }
  }
+ if(edition&&edition!=='010'&&new URLSearchParams(location.search).get('portal')==='010'){
+  const back=document.createElement('a');back.className='portal-return';const origin=new URLSearchParams(location.search).get('entry');
+  back.href=route('/editions/010/')+(/^[a-z0-9-]+$/.test(origin||'')?'#idea-'+origin:location.hash);
+  back.textContent=english?'← Back to the 3AM portal':'← 返回凌晨三點入口';
+  document.querySelector('.edition-route>div')?.prepend(back);
+  document.querySelectorAll('dialog').forEach(d=>(d.querySelector('.dialog-body')||d).append(back.cloneNode(true)));
+ }
  const switcher=document.querySelector('header .language-switch');
  if(switcher)for(const dialog of document.querySelectorAll('dialog')){
   const copy=switcher.cloneNode(true);copy.classList.add('dialog-language');

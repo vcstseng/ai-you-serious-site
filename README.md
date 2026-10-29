@@ -12,4 +12,4 @@ This repository contains the generated public website. Editable content, source 
 
 GitHub Pages publishes the `main` branch from the repository root. `.nojekyll` is required. No installation or build step runs in this repository.
 
-Edition 010 is a fictional shopping broadcast: nine ideas return from earlier editions, and one original closing product lets visitors write and download a strange idea. Prices, stock and orders are fictional.
+Edition 010 is a portal dressed as a fictional shopping show. Nine main entrances lead to Editions 001–009, with a return to the original 010 segment. There is no cart, ordering or checkout flow. Prices and promotions are stage props. The closing segment lets visitors write and download a strange idea.
