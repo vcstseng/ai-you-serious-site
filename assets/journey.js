@@ -12,7 +12,7 @@
  let contexts={};
  try{contexts=JSON.parse(sessionStorage.getItem(key)||'{}')}catch{}
  // Discard navigation remembered from the withdrawn edition.
- delete contexts['010'];if(contexts.lastReader?.number==='010')delete contexts.lastReader;
+ for(const retired of ['009','010']){delete contexts[retired];if(contexts.lastReader?.number===retired)delete contexts.lastReader;}
  function save(number,value){if(!/^\d{3}$/.test(number||''))return;contexts[number]=value;try{sessionStorage.setItem(key,JSON.stringify(contexts))}catch{}}
  function stateLinks(id,search=location.search){
   const current=new URL(location.href);
