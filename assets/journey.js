@@ -11,6 +11,8 @@
  const route=(path,lang=english)=>base+(lang?'/en':'')+path;
  let contexts={};
  try{contexts=JSON.parse(sessionStorage.getItem(key)||'{}')}catch{}
+ // Discard navigation remembered from the withdrawn edition.
+ delete contexts['010'];if(contexts.lastReader?.number==='010')delete contexts.lastReader;
  function save(number,value){if(!/^\d{3}$/.test(number||''))return;contexts[number]=value;try{sessionStorage.setItem(key,JSON.stringify(contexts))}catch{}}
  function stateLinks(id,search=location.search){
   const current=new URL(location.href);
@@ -24,7 +26,7 @@
  const api=window.AIYS={
   revealOnEntry(target,heading=target){
    if(!location.hash.startsWith('#idea-')||!target)return;
-   const show=()=>requestAnimationFrame(()=>{if(document.activeElement&&document.activeElement!==document.body&&document.activeElement!==document.documentElement)return;if(!target.isConnected||target.hidden)return;target.scrollIntoView({block:'start',behavior:'auto'});if(heading){heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true})}});
+   const show=()=>requestAnimationFrame(()=>{target.scrollIntoView({block:'start',behavior:'auto'});if(heading){heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true})}});
    if(document.readyState==='complete')show();else addEventListener('load',show,{once:true});
   },
   clearSelection(){const u=new URL(location.href);u.hash='';history.replaceState(null,'',u.pathname+u.search);stateLinks()},
@@ -76,15 +78,6 @@
    const a=document.querySelector('.idea-return');
    if(a){a.classList.add('source-return');a.href=u.href;a.textContent=english?'← Back to search results':'← 返回搜尋結果'}
   }
- }
- if(edition&&edition!=='010'&&new URLSearchParams(location.search).get('portal')==='010'){
-  document.body.classList.add('portal-entry');
-  const back=document.createElement('a');back.className='portal-return';const origin=new URLSearchParams(location.search).get('entry');
-  back.href=route('/editions/010/')+(/^[a-z0-9-]+$/.test(origin||'')?'#idea-'+origin:location.hash);
-  const look=new URLSearchParams(location.search).get('look');if(['elevator','tabs','lost','laundry','interview'].includes(look)){const u=new URL(back.href,location.origin);u.searchParams.set('look',look);back.href=u.href}
-  back.textContent=english?'← Back to the portal':'← 返回世界入口';
-  document.querySelector('.edition-route>div')?.prepend(back);
-  document.querySelectorAll('dialog').forEach(d=>(d.querySelector('.dialog-body')||d).append(back.cloneNode(true)));
  }
  const switcher=document.querySelector('header .language-switch');
  if(switcher)for(const dialog of document.querySelectorAll('dialog')){
