@@ -15,3 +15,8 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 
 [data-look=lost] .object-core{inset:0 10%;background-image:var(--object-image);background-size:contain;background-repeat:no-repeat;box-shadow:none;clip-path:none!important;border-radius:0!important;filter:saturate(.5);transform:rotate(-4deg)}[data-look=lost] .scene-stage.flipped .chosen .object-core{opacity:.12}[data-look=lost] .world-object:nth-child(3) .object-core{filter:saturate(.5)}
+
+.scene-caption a{display:inline-flex;align-items:center;min-height:44px;letter-spacing:0;text-decoration:underline;text-underline-offset:4px}.scene-caption{padding:2px 18px}#note-selected{padding:22px 0}#note-selected p{font:11px monospace;color:var(--muted)}#note-selected h2{font:500 27px/1.4 var(--display)}#note-selected a{text-decoration:underline;display:inline-block;min-height:44px;padding-top:10px}html{scroll-behavior:auto}
+
+/* Keep the portal grid independent of the older Home gallery rules. */
+@media(max-width:800px){.portal-room .world-grid{grid-template-columns:repeat(2,minmax(0,1fr))}[data-look=elevator] .portal-room .world-grid{grid-template-columns:1fr;width:54px;right:10px;top:65px;gap:7px}[data-look=elevator] .scene-stage{height:600px}[data-look=elevator] .world-object{min-height:44px}[data-look=elevator] .scene-decor{right:90px}[data-look=tabs] .world-grid{display:grid;height:auto;margin:0;padding:25px 18px}[data-look=tabs] .world-object{position:relative;inset:auto;width:100%;height:165px;rotate:0deg;transform:none!important}[data-look=tabs] .object-label{touch-action:auto;cursor:pointer}}
