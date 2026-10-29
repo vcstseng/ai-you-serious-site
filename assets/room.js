@@ -33,5 +33,5 @@ fetch(siteBase+localePrefix+'/assets/ideas.json').then(r=>{if(!r.ok)throw Error(
   const middle=n===6?art+num+heading+zh:num+heading+(n===2?'<span class="buff-rule">PERSONALITY / ABILITY / COMPANY</span>':'')+art+zh;
   return `<a id="idea-${escapeHTML(idea.id)}" class="object ${classes}" href="${siteBase}${localePrefix}/archive/ideas/${encodeURIComponent(idea.id)}/" aria-label="${escapeHTML(idea.title)}${isEnglish?", read idea":"，閱讀想法"}">${middle}<span class="type">${escapeHTML(idea.kind)}</span><span class="arrow" aria-hidden="true">↗</span></a>`;
  }).join('');
- if(location.hash.startsWith('#idea-'))document.getElementById(location.hash.slice(1))?.scrollIntoView({block:'center'});
+ if(location.hash.startsWith('#idea-')&&(!document.activeElement||document.activeElement===document.body))document.getElementById(location.hash.slice(1))?.scrollIntoView({block:'center'});
 }).catch(()=>{room.innerHTML=isEnglish?'<p>Unable to load ideas. Please refresh the page.</p>':'<p>內容暫時無法載入，請重新整理。</p>';});

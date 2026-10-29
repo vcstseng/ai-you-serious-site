@@ -38,7 +38,7 @@
   onRestore(callback){callbacks.push(callback)},
   restore(){for(const callback of callbacks)callback(new URL(location.href));stateLinks()},
  };
- addEventListener('hashchange',()=>{if(location.hash.startsWith('#idea-'))api.restore()});
+ addEventListener('hashchange',()=>{if(location.hash.startsWith('#idea-'))api.restore();else stateLinks()});
  addEventListener('popstate',()=>api.restore());
  document.addEventListener('click',event=>{
   const a=event.target.closest('a[href]');if(!a)return;
@@ -78,6 +78,7 @@
   }
  }
  if(edition&&edition!=='010'&&new URLSearchParams(location.search).get('portal')==='010'){
+  document.body.classList.add('portal-entry');
   const back=document.createElement('a');back.className='portal-return';const origin=new URLSearchParams(location.search).get('entry');
   back.href=route('/editions/010/')+(/^[a-z0-9-]+$/.test(origin||'')?'#idea-'+origin:location.hash);
   back.textContent=english?'← Back to the 3AM portal':'← 返回凌晨三點入口';
