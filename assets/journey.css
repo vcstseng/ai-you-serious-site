@@ -209,3 +209,5 @@ html[lang=en] .archive-row small{display:none}
 .cover-machine .cover-shade{background:none}.cover-machine .cover-title-group{color:#151611;bottom:22px}.cover-machine h2{font-family:monospace;font-style:normal;font-size:clamp(24px,3vw,42px);line-height:1}.cover-machine .cover-issue{color:#151611}
 
 .cover-family .cover-image{filter:grayscale(1)}.cover-family .cover-title-group h2{font-family:Georgia,serif;font-size:clamp(26px,3.4vw,52px);line-height:1.02}.cover-family .cover-shade{background:linear-gradient(transparent 30%,#000c)}
+
+.cover-shopping .cover-title-group h2{font-family:Impact,Arial,sans-serif;font-size:clamp(28px,4vw,60px);font-style:normal;color:white;text-shadow:3px 3px #111}.cover-shopping .cover-shade{background:linear-gradient(transparent 45%,#1119)}

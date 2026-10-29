@@ -46,16 +46,22 @@
   const target=clean(u.pathname);if(!target?.startsWith('/archive/ideas/'))return;
   const modified=event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||event.button>0;
   const path=clean(location.pathname);
-  if(idea)return; // Moving between L2 pages retains the original entry context.
+  if(idea){
+   const previous=contexts.lastReader,origin=previous&&contexts[previous.number],next=target.split('/').filter(Boolean).at(-1);
+   if(origin?.members?.includes(next)){contexts.lastReader={...previous,idea:next};try{sessionStorage.setItem(key,JSON.stringify(contexts))}catch{}}
+   return;
+  } // A curated edition may reference canonical readers from earlier worlds.
   const number=edition||a.dataset.edition;
+  contexts.lastReader={idea:target.split('/').filter(Boolean).at(-1),number};
   if(path==='/archive/')save(number,{type:'archive',path,search:location.search});
   else if(edition&&(path==='/'||path==='/editions/'+edition+'/')){
    const id=a.id.startsWith('idea-')?a.id:location.hash.slice(1);
-   save(number,{type:'room',path,search:location.search,hash:id?'#'+id:'',idea:target.split('/').filter(Boolean).at(-1)});
+   save(number,{type:'room',path,search:location.search,hash:id?'#'+id:'',idea:target.split('/').filter(Boolean).at(-1),title:document.querySelector('meta[name="edition-title"]')?.content,members:(document.querySelector('meta[name="edition-ideas"]')?.content||'').split(',')});
   }
  },true);
  if(idea){
-  const number=document.body.dataset.editionNumber;
+  const remembered=contexts.lastReader;
+  const number=remembered?.idea===idea&&/^\d{3}$/.test(remembered.number||'')?remembered.number:document.body.dataset.editionNumber;
   const entry=contexts[number];
   if(entry?.type==='room'&&(entry.path==='/'||entry.path==='/editions/'+number+'/')){
    const path=entry.path==='/'&&number!==latest?'/editions/'+number+'/':entry.path;
@@ -64,6 +70,7 @@
    if(entry.idea!==idea)u.searchParams.delete('reveal');
    u.hash='idea-'+idea;
    document.querySelectorAll('.idea-return,.back-room').forEach(a=>a.href=u.href);
+   const label=document.querySelector('.idea-return span');if(label&&entry.title)label.textContent=entry.title;
   }else if(entry?.type==='archive'&&entry.path==='/archive/'){
    const u=new URL(route('/archive/'),location.origin);u.search=entry.search||'';
    const a=document.querySelector('.idea-return');
