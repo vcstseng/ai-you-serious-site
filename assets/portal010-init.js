@@ -1,0 +1,2 @@
+/* Choose once per tab; a shared link can always request an exact scene. */
+(()=>{const looks=['elevator','tabs','lost','laundry','interview'];let look=new URLSearchParams(location.search).get('look');try{if(!looks.includes(look))look=sessionStorage.getItem('aiys-portal-look-v1')}catch{}if(!looks.includes(look))look=looks[Math.floor(Math.random()*looks.length)];document.documentElement.dataset.look=look;try{sessionStorage.setItem('aiys-portal-look-v1',look)}catch{}})();

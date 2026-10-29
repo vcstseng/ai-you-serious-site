@@ -24,7 +24,7 @@
  const api=window.AIYS={
   revealOnEntry(target,heading=target){
    if(!location.hash.startsWith('#idea-')||!target)return;
-   const show=()=>requestAnimationFrame(()=>{target.scrollIntoView({block:'start',behavior:'auto'});if(heading){heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true})}});
+   const show=()=>requestAnimationFrame(()=>{if(document.activeElement&&document.activeElement!==document.body&&document.activeElement!==document.documentElement)return;if(!target.isConnected||target.hidden)return;target.scrollIntoView({block:'start',behavior:'auto'});if(heading){heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true})}});
    if(document.readyState==='complete')show();else addEventListener('load',show,{once:true});
   },
   clearSelection(){const u=new URL(location.href);u.hash='';history.replaceState(null,'',u.pathname+u.search);stateLinks()},
@@ -81,7 +81,8 @@
   document.body.classList.add('portal-entry');
   const back=document.createElement('a');back.className='portal-return';const origin=new URLSearchParams(location.search).get('entry');
   back.href=route('/editions/010/')+(/^[a-z0-9-]+$/.test(origin||'')?'#idea-'+origin:location.hash);
-  back.textContent=english?'← Back to the 3AM portal':'← 返回凌晨三點入口';
+  const look=new URLSearchParams(location.search).get('look');if(['elevator','tabs','lost','laundry','interview'].includes(look)){const u=new URL(back.href,location.origin);u.searchParams.set('look',look);back.href=u.href}
+  back.textContent=english?'← Back to the portal':'← 返回世界入口';
   document.querySelector('.edition-route>div')?.prepend(back);
   document.querySelectorAll('dialog').forEach(d=>(d.querySelector('.dialog-body')||d).append(back.cloneNode(true)));
  }
