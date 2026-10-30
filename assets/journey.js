@@ -44,7 +44,7 @@
  addEventListener('popstate',()=>api.restore());
  document.addEventListener('click',event=>{
   const a=event.target.closest('a[href]');if(!a)return;
-  const u=new URL(a.href,location.href);if(u.origin!==location.origin)return;
+  const u=new URL(a.getAttribute('href'),location.href);if(u.origin!==location.origin)return;
   const target=clean(u.pathname);if(!target?.startsWith('/archive/ideas/'))return;
   const modified=event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||event.button>0;
   const path=clean(location.pathname);
